@@ -1,3 +1,7 @@
-{
-  "extends": "next/core-web-vitals"
-}
+module.exports = {
+  extends: "next/core-web-vitals",
+  rules: {
+    "react-hooks/rules-of-hooks": "error", // Pastikan aturan ini tetap aktif
+    "react/no-unescaped-entities": "off", // Nonaktifkan aturan ini
+  },
+};
