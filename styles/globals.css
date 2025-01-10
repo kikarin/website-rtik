@@ -5,7 +5,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@layer utilities {
+  .animate-play-running {
+    animation-play-state: running;
+  }
+}
 
 html,
 body {

@@ -6,7 +6,7 @@ import { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css' // Import AOS styles
 
-export default function programRtik() {
+export default function ProgramRtik() {
   useEffect(() => {
     AOS.init({
       duration: 800,

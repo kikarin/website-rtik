@@ -216,10 +216,9 @@ export default function kontakRtik() {
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13232.168016162936!2d106.78691906954217!3d-6.563516139729918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c591e4dc580f%3A0x41a2f4cac520b2c!2sRelawan%20TIK%20Bogor!5e0!3m2!1sid!2sid!4v1736397609003!5m2!1sid!2sid"
                                         width="100%"
                                         height="100%"
-                                        style={{ border: 0 }}
                                         allowFullScreen
-                                        loading="lazy"
-                                        className="rounded-xl"
+                                        title="maps"
+                                        className="rounded-xl border-0"
                                     ></iframe>
                                 </div>
                             </div>

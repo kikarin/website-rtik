@@ -18,77 +18,77 @@ export default function ProfilDanSejarah() {
     })
   }, [])
 
-    return (
-      <>
-        {/* Navbar */}
-        <div className="w-full md:h-[90px] relative">
-          <div className="w-full h-auto md:pb-0 md:pt-0 relative z-30">
-            <div className="flex flex-col h-auto items-center">
-              <nav className="w-full bg-white relative md:fixed shadow-lg border-b-[5px] border-b-red-600">
-                <div className="w-full bg-blue-800 py-2 hidden md:block">
-                  <div className="container-custom mx-auto flex flex-row justify-center text-sm text-white">
-                    <div className="inline-flex items-center mx-2">
-                      <FaMapMarkerAlt className="mr-1" /> Plaza Indah Bogor, Blok B2, Jl. Saleh Iskandar, Kedung Badak, Kota Bogor
-                    </div>
-                    <div className="inline-flex items-center mx-2">
-                      <FaEnvelope className="mr-1" /> humas@relawantik.or.id
-                    </div>
-                    <div className="inline-flex items-center mx-2 border-l border-l-white px-4">Media Sosial :</div>
-                    <Link href="">
-                      <div className="inline-flex items-center mx-2 hover:text-yellow-400 hover:cursor-pointer"><FaFacebook /></div>
-                    </Link>
-                    <Link href="">
-                      <div className="inline-flex items-center mx-2 hover:text-yellow-400 hover:cursor-pointer"><FaInstagram /></div>
-                    </Link>
-                    <Link href="">
-                      <div className="inline-flex items-center mx-2 hover:text-yellow-400 hover:cursor-pointer"><FaTwitter /></div>
-                    </Link>
+  return (
+    <>
+      {/* Navbar */}
+      <div className="w-full md:h-[90px] relative">
+        <div className="w-full h-auto md:pb-0 md:pt-0 relative z-30">
+          <div className="flex flex-col h-auto items-center">
+            <nav className="w-full bg-white relative md:fixed shadow-lg border-b-[5px] border-b-red-600">
+              <div className="w-full bg-blue-800 py-2 hidden md:block">
+                <div className="container-custom mx-auto flex flex-row justify-center text-sm text-white">
+                  <div className="inline-flex items-center mx-2">
+                    <FaMapMarkerAlt className="mr-1" /> Plaza Indah Bogor, Blok B2, Jl. Saleh Iskandar, Kedung Badak, Kota Bogor
+                  </div>
+                  <div className="inline-flex items-center mx-2">
+                    <FaEnvelope className="mr-1" /> humas@relawantik.or.id
+                  </div>
+                  <div className="inline-flex items-center mx-2 border-l border-l-white px-4">Media Sosial :</div>
+                  <Link href="">
+                    <div className="inline-flex items-center mx-2 hover:text-yellow-400 hover:cursor-pointer"><FaFacebook /></div>
+                  </Link>
+                  <Link href="">
+                    <div className="inline-flex items-center mx-2 hover:text-yellow-400 hover:cursor-pointer"><FaInstagram /></div>
+                  </Link>
+                  <Link href="">
+                    <div className="inline-flex items-center mx-2 hover:text-yellow-400 hover:cursor-pointer"><FaTwitter /></div>
+                  </Link>
+                </div>
+              </div>
+
+              <div className="container-custom flex flex-wrap items-center justify-between mx-auto">
+                <div className="w-full md:w-[15%] flex md:justify-start justify-center">
+                  <div className="w-[50%] md:w-[100%] my-1 flex flex-col justify-center bg-white rounded-lg p-2">
+                    <Image src={logoutama} className="rounded-lg" alt="Logo RTIK" />
                   </div>
                 </div>
-  
-                <div className="container-custom flex flex-wrap items-center justify-between mx-auto">
-                  <div className="w-full md:w-[15%] flex md:justify-start justify-center">
-                    <div className="w-[50%] md:w-[100%] my-1 flex flex-col justify-center bg-white rounded-lg p-2">
-                      <Image src={logoutama} className="rounded-lg" alt="Logo RTIK" />
-                    </div>
-                  </div>
-  
-                  <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-10 h-10 bg-white justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
-                    <span className="sr-only">Open main menu</span>
-                    <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
-                    </svg>
-                  </button>
-  
-                  <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-                    <ul className="flex flex-col p-6 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
-                      <Link href="/">
-                        <li><div className="uppercase cursor-pointer block px-5 py-2 text-black font-regular hover:bg-blue-800 hover:text-white rounded-3xl duration-500 hover:scale-110">Beranda</div></li>
-                      </Link>
-                      <Link href="/profil">
-                        <li><div className="uppercase cursor-pointer block px-5 py-2 text-black font-regular hover:bg-blue-800 hover:text-white rounded-3xl duration-500 hover:scale-110">Profil</div></li>
-                      </Link>
-                      <Link href="/program">
-                        <li><div className="uppercase cursor-pointer block px-5 py-2 text-black font-regular hover:bg-blue-800 hover:text-white rounded-3xl duration-500 hover:scale-110">Program</div></li>
-                      </Link>
-                      <Link href="/mitra">
-                        <li><div className="uppercase cursor-pointer block px-5 py-2 text-black font-regular hover:bg-blue-800 hover:text-white rounded-3xl duration-500 hover:scale-110">Mitra</div></li>
-                      </Link>
-                      <Link href="/kontak">
-                        <li><div className="uppercase cursor-pointer block px-5 py-2 text-black font-regular hover:bg-blue-800 hover:text-white rounded-3xl duration-500 hover:scale-110">Kontak</div></li>
-                      </Link>
-                    </ul>
-                  </div>
+
+                <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-10 h-10 bg-white justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
+                  <span className="sr-only">Open main menu</span>
+                  <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
+                  </svg>
+                </button>
+
+                <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+                  <ul className="flex flex-col p-6 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
+                    <Link href="/">
+                      <li><div className="uppercase cursor-pointer block px-5 py-2 text-black font-regular hover:bg-blue-800 hover:text-white rounded-3xl duration-500 hover:scale-110">Beranda</div></li>
+                    </Link>
+                    <Link href="/profil">
+                      <li><div className="uppercase cursor-pointer block px-5 py-2 text-black font-regular hover:bg-blue-800 hover:text-white rounded-3xl duration-500 hover:scale-110">Profil</div></li>
+                    </Link>
+                    <Link href="/program">
+                      <li><div className="uppercase cursor-pointer block px-5 py-2 text-black font-regular hover:bg-blue-800 hover:text-white rounded-3xl duration-500 hover:scale-110">Program</div></li>
+                    </Link>
+                    <Link href="/mitra">
+                      <li><div className="uppercase cursor-pointer block px-5 py-2 text-black font-regular hover:bg-blue-800 hover:text-white rounded-3xl duration-500 hover:scale-110">Mitra</div></li>
+                    </Link>
+                    <Link href="/kontak">
+                      <li><div className="uppercase cursor-pointer block px-5 py-2 text-black font-regular hover:bg-blue-800 hover:text-white rounded-3xl duration-500 hover:scale-110">Kontak</div></li>
+                    </Link>
+                  </ul>
                 </div>
-              </nav>
-            </div>
+              </div>
+            </nav>
           </div>
         </div>
+      </div>
 
       <div className="w-full bg-gradient-to-r from-blue-800 to-blue-600 min-h-[100px] relative">
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="container mx-auto px-4 py-20 relative z-10">
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -108,9 +108,9 @@ export default function ProfilDanSejarah() {
             <p className="mb-4">
               Dirintis sejak tahun 2008, sebagai bentuk sinergi dan kolaborasi berbagai unsur pemangku kepentingan untuk mewujudkan masyarakat informasi Indonesia, oleh Bambang Soeprijanto selaku Direktur Pemberdayaan Informatika pada waktu itu, simpul – simpul pertemuan, komunikasi dan koordinasi terus menggeliat.
             </p>
-            
+
             <div className="my-8 flex justify-center">
-              <Image 
+              <Image
                 src="/Hani-Purnawanti.jpg"
                 alt="FK5T RTIK"
                 width={760}
@@ -130,7 +130,7 @@ export default function ProfilDanSejarah() {
           <h2 className="text-3xl font-bold text-gray-800 mb-6">
             Susunan Kepengurusan Relawan TIK Indonesia dari Masa ke Masa
           </h2>
-          
+
           {/* Tabs */}
           <div className="border-b border-gray-200 mb-6">
             <div className="flex space-x-8">
@@ -141,11 +141,10 @@ export default function ProfilDanSejarah() {
               ].map((tab) => (
                 <button
                   key={tab.id}
-                  className={`py-4 px-1 border-b-2 font-medium text-sm ${
-                    activeTab === tab.id
+                  className={`py-4 px-1 border-b-2 font-medium text-sm ${activeTab === tab.id
                       ? 'border-blue-500 text-blue-600'
                       : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
-                  }`}
+                    }`}
                   onClick={() => setActiveTab(tab.id)}
                 >
                   {tab.label}
@@ -239,7 +238,7 @@ export default function ProfilDanSejarah() {
                 </table>
               </div>
             )}
-            
+
             {activeTab === '2pSrgA' && (
               <div className="prose max-w-none">
                 <table className="min-w-full border-collapse border border-gray-300">
@@ -312,7 +311,7 @@ export default function ProfilDanSejarah() {
                 </table>
               </div>
             )}
-            
+
             {activeTab === 'koGHYx' && (
               <div className="prose max-w-none">
                 <table className="min-w-full border-collapse border border-gray-300">
@@ -381,17 +380,8 @@ export default function ProfilDanSejarah() {
         </div>
 
         {/* Gallery Section */}
-        <div 
-          className="wp-block-themeisle-blocks-advanced-columns custom-gallery-container"
-          style={{
-            paddingTop: '64px',
-            paddingBottom: '64px',
-            paddingLeft: '24px',
-            paddingRight: '24px',
-            marginTop: '0px',
-            marginBottom: '0px',
-            minHeight: 'auto'
-          }}
+        <div
+          className="wp-block-themeisle-blocks-advanced-columns custom-gallery-container py-16 px-6 my-0 min-h-screen"
         >
           <div className="guten-element guten-gallery layout-overlay grid-desktop-3 grid-tablet-2 grid-mobile-2">
             {/* Gallery Popup */}
@@ -399,15 +389,15 @@ export default function ProfilDanSejarah() {
               <div className="gallery-header">
                 <div className="left-header"></div>
                 <div className="right-header flex space-x-4">
-                  <svg className="icon-fullscreen cursor-pointer hover:text-blue-500 transition-colors" 
-                       xmlns="http://www.w3.org/2000/svg" 
-                       width="24" height="24" 
-                       viewBox="0 0 24 24" 
-                       fill="none" 
-                       stroke="currentColor" 
-                       strokeWidth="2" 
-                       strokeLinecap="round" 
-                       strokeLinejoin="round"
+                  <svg className="icon-fullscreen cursor-pointer hover:text-blue-500 transition-colors"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24" height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   >
                     <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
                   </svg>
@@ -428,15 +418,16 @@ export default function ProfilDanSejarah() {
                         'rtik-lama-7.jpg',
                         'rtik-lama-6.jpg'
                       ].map((img, index) => (
-                        <div key={index} 
-                             className="swiper-slide image-list animated"
-                             style={{visibility: 'visible', animationPlayState: 'running'}}
+                        <div key={index}
+                          className="swiper-slide image-list animated visible animate-play-running"
                         >
                           <div className="content-image swiper-zoom-container">
-                            <img 
-                              className="main-image w-full h-full object-cover" 
-                              src={`https://relawantik.or.id/wp-content/uploads/2023/01/${img}`} 
-                              alt={`RTIK Gallery ${index + 1}`} 
+                            <Image
+                              className="main-image w-full h-full object-cover"
+                              src={`https://relawantik.or.id/wp-content/uploads/2023/01/${img}`}
+                              alt={`RTIK Gallery ${index + 1}`}
+                              width={800}
+                              height={800}
                             />
                           </div>
                         </div>
@@ -450,9 +441,9 @@ export default function ProfilDanSejarah() {
             </div>
 
             {/* Gallery Grid */}
-            <div 
-              className="gallery-items grid grid-cols-2 md:grid-cols-3 gap-4 gallery-responsive-padding" 
-              data-loaded="6" 
+            <div
+              className="gallery-items grid grid-cols-2 md:grid-cols-3 gap-4 gallery-responsive-padding"
+              data-loaded="6"
               data-max="6"
             >
               {[
@@ -463,21 +454,19 @@ export default function ProfilDanSejarah() {
                 'rtik-lama-7.jpg',
                 'rtik-lama-6.jpg'
               ].map((img, index) => (
-                <div 
-                  key={index} 
-                  className="gallery-item-wrap animated" 
+                <div
+                  key={index}
+                  className="gallery-item-wrap animated visible animate-play-running"
                   data-index={index}
-                  style={{
-                    visibility: 'visible',
-                    animationPlayState: 'running'
-                  }}
                 >
                   <div className="grid-item">
                     <div className="thumbnail-wrap relative group overflow-hidden rounded-lg">
-                      <img 
+                      <Image
                         src={`https://relawantik.or.id/wp-content/uploads/2023/01/${img}`}
                         alt={`RTIK Gallery ${index + 1}`}
                         className="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-110"
+                        width={800}
+                        height={800}
                       />
                       <div className="caption-wrap style-overlay absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
                         <div className="item-buttons">
@@ -502,15 +491,15 @@ export default function ProfilDanSejarah() {
 
       {/* Footer */}
       <div className="bg-slate-100" data-aos="fade-up">
-      <div className="container-custom mx-auto py-10 flex flex-col items-center justify-center">
-        <div>
+        <div className="container-custom mx-auto py-10 flex flex-col items-center justify-center">
+          <div>
             <Image src={logoutama} className="rounded-xl" alt="Logo RTIK" width={200} height={50} />
-        </div>
-        <div>
-          <p className="text-black text-sm">Copyright 2025 Relawan TIK Indonesia</p>
+          </div>
+          <div>
+            <p className="text-black text-sm">Copyright 2025 Relawan TIK Indonesia</p>
+          </div>
         </div>
       </div>
-    </div>
     </>
   )
 }
