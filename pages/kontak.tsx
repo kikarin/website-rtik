@@ -18,8 +18,8 @@ import Link from "next/link";
 
 export default function kontakRtik() {
     return (
-        // Menubar
-        <>
+        <div className="min-h-screen flex flex-col justify-between">
+            <div className="flex-1">
             <div className="w-full md:h-[90px] relative">
                 <div className="w-full h-auto md:pb-0 md:pt-0 relative z-30">
                     <div className="flex flex-col h-auto items-center">
@@ -102,28 +102,25 @@ export default function kontakRtik() {
 
 
             {/* Section Kontak */}
-            <div className="container-custom mx-auto mb-14 px-4 sm:px-6 lg:px-8 mt-32" data-aos="fade-down">
+                <div className="container-custom mx-auto mb-14 px-4 sm:px-6 lg:px-8 mt-32" data-aos="fade-down">
                 <div className="max-w-7xl mx-auto">
-
-
                     {/* Content Grid */}
-                    <div className="relative bg-gradient-to-br from-white to-gray-50 rounded-3xl p-8 md:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-gray-100">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="relative bg-gradient-to-br from-white to-gray-50 rounded-3xl p-4 sm:p-8 md:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-gray-100">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                             {/* Informasi Kontak */}
-                            <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100">
-                                <h2 className="text-2xl font-bold text-gray-800 mb-8 flex items-center gap-3">
+                            <div className="w-full">
+                                <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-6 sm:mb-8 flex items-center gap-3">
                                     <span className="w-1.5 h-8 bg-blue-600 rounded-full"></span>
                                     Informasi Kontak
                                 </h2>
-
-                                <div className="space-y-6">
+                                <div className="space-y-4 sm:space-y-6">
                                     {/* Kantor Pusat */}
-                                    <div className="p-5 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-300">
-                                        <h3 className="font-semibold text-lg text-blue-800 mb-3 flex items-center gap-2">
-                                            <FaMapMarkerAlt className="text-2xl" />
+                                    <div className="p-4 sm:p-5 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-300">
+                                        <h3 className="font-semibold text-base sm:text-lg text-blue-800 mb-2 sm:mb-3 flex items-center gap-2">
+                                            <FaMapMarkerAlt className="text-xl sm:text-2xl" />
                                             Kantor Pusat
                                         </h3>
-                                        <p className="text-gray-600 ml-7 leading-relaxed">
+                                        <p className="text-sm sm:text-base text-gray-600 ml-7 leading-relaxed">
                                             Plaza Indah Bogor, Blok B2,
                                             <br />Jl. Saleh Iskandar, Kedung Badak,
                                             <br />Kota Bogor
@@ -131,40 +128,40 @@ export default function kontakRtik() {
                                     </div>
 
                                     {/* Nomor Telepon */}
-                                    <div className="p-5 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-300">
-                                        <h3 className="font-semibold text-lg text-blue-800 mb-3 flex items-center gap-2">
-                                            <FaPhoneAlt className="text-2xl" />
+                                    <div className="p-4 sm:p-5 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-300">
+                                        <h3 className="font-semibold text-base sm:text-lg text-blue-800 mb-2 sm:mb-3 flex items-center gap-2">
+                                            <FaPhoneAlt className="text-xl sm:text-2xl" />
                                             Telepon
                                         </h3>
-                                        <div className="space-y-3 ml-7">
+                                        <div className="space-y-2 sm:space-y-3 ml-7">
                                             <Link href="tel:+6282211335225"
-                                                className="text-gray-600 hover:text-blue-600 transition-colors block hover:translate-x-1 duration-200">
+                                                className="text-sm sm:text-base text-gray-600 hover:text-blue-600 transition-colors block hover:translate-x-1 duration-200">
                                                 0857-9755-2572
                                             </Link>
                                         </div>
                                     </div>
 
                                     {/* Email */}
-                                    <div className="p-5 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-300">
-                                        <h3 className="font-semibold text-lg text-blue-800 mb-3 flex items-center gap-2">
-                                            <FaEnvelope className="text-2xl" />
+                                    <div className="p-4 sm:p-5 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-300">
+                                        <h3 className="font-semibold text-base sm:text-lg text-blue-800 mb-2 sm:mb-3 flex items-center gap-2">
+                                            <FaEnvelope className="text-xl sm:text-2xl" />
                                             Email
                                         </h3>
-                                        <div className="space-y-3 ml-7">
+                                        <div className="space-y-2 sm:space-y-3 ml-7">
                                             <Link href="mailto:humas@relawantik.or.id"
-                                                className="text-gray-600 hover:text-blue-600 transition-colors block hover:translate-x-1 duration-200">
+                                                className="text-sm sm:text-base text-gray-600 hover:text-blue-600 transition-colors block hover:translate-x-1 duration-200">
                                                 humas@relawantik.or.id
                                             </Link>
                                         </div>
                                     </div>
 
                                     {/* Media Sosial */}
-                                    <div className="p-5 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-300">
-                                        <h3 className="font-semibold text-lg text-blue-800 mb-4 flex items-center gap-2">
-                                            <FaUsers className="text-2xl" />
+                                    <div className="p-4 sm:p-5 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-300">
+                                        <h3 className="font-semibold text-base sm:text-lg text-blue-800 mb-3 sm:mb-4 flex items-center gap-2">
+                                            <FaUsers className="text-xl sm:text-2xl" />
                                             Media Sosial
                                         </h3>
-                                        <div className="flex flex-wrap gap-4 ml-7">
+                                        <div className="flex flex-wrap gap-3 sm:gap-4 ml-7">
                                             <Link href="https://facebook.com/relawantik" target="_blank" rel="noopener noreferrer">
                                                 <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center text-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                                                     <FaFacebook className="text-xl" />
@@ -206,12 +203,12 @@ export default function kontakRtik() {
                             </div>
 
                             {/* Maps */}
-                            <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100">
-                                <h2 className="text-2xl font-bold text-gray-800 mb-8 flex items-center gap-3">
+                            <div className="w-full">
+                                <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-6 sm:mb-8 flex items-center gap-3">
                                     <span className="w-1.5 h-8 bg-blue-600 rounded-full"></span>
                                     Lokasi Kami
                                 </h2>
-                                <div className="w-full h-[450px] rounded-xl overflow-hidden border border-gray-100 shadow-inner">
+                                <div className="w-full h-[300px] sm:h-[450px] rounded-xl overflow-hidden border border-gray-100 shadow-inner">
                                     <iframe
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13232.168016162936!2d106.78691906954217!3d-6.563516139729918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c591e4dc580f%3A0x41a2f4cac520b2c!2sRelawan%20TIK%20Bogor!5e0!3m2!1sid!2sid!4v1736397609003!5m2!1sid!2sid"
                                         width="100%"
@@ -221,6 +218,7 @@ export default function kontakRtik() {
                                         loading="lazy"
                                         className="rounded-xl"
                                     ></iframe>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -228,17 +226,19 @@ export default function kontakRtik() {
                 </div>
             </div>
 
-            {/* footer */}
-            <div className="bg-slate-100" data-aos="fade-up">
-                <div className="container-custom mx-auto py-10 flex flex-col items-center justify-center">
-                    <div>
-                        <Image src={logoutama} className="rounded-xl" alt="" width={200} height={50} />
-                    </div>
-                    <div>
-                        <p className="text-black text-sm">Copyright 2025 Relawan TIK Indonesia</p>
+            {/* Footer */}
+            <footer className="bg-slate-100 w-full mt-20" data-aos="fade-up">
+                <div className="container-custom mx-auto py-6 sm:py-10 px-4">
+                    <div className="flex flex-col items-center justify-center space-y-4">
+                        <div className="w-[150px] sm:w-[200px]">
+                            <Image src={logoutama} className="rounded-xl" alt="Logo RTIK" />
+                        </div>
+                        <p className="text-black text-xs sm:text-sm text-center">
+                            Copyright 2025 Relawan TIK Indonesia
+                        </p>
                     </div>
                 </div>
-            </div>
-        </>
+            </footer>
+        </div>
     )
 }

@@ -20,80 +20,80 @@ export default function ProfilRtik() {
   return (
     <>
       {/* Navbar */}
-      <div className="w-full md:h-[90px] relative">
-        <div className="w-full h-auto md:pb-0 md:pt-0 relative z-30">
-          <div className="flex flex-col h-auto items-center">
-            <nav className="w-full bg-white relative md:fixed shadow-lg border-b-[5px] border-b-red-600">
-              <div className="w-full bg-blue-800 py-2 hidden md:block">
-                <div className="container-custom mx-auto flex flex-row justify-center text-sm text-white">
+   <div className="w-full md:h-[90px] relative">
+    <div className="w-full h-auto md:pb-0 md:pt-0 relative z-30">
+      <div className="flex flex-col h-auto items-center">
+<nav className="w-full bg-white relative md:fixed shadow-lg border-b-[5px] border-b-red-600">
+<div className="w-full bg-blue-800 py-2 hidden md:block">
+    <div className="container-custom mx-auto flex flex-row justify-center text-sm text-white">
                   <div className="inline-flex items-center mx-2">
                     <FaMapMarkerAlt className="mr-1" /> Plaza Indah Bogor, Blok B2, Jl. Saleh Iskandar, Kedung Badak, Kota Bogor
                   </div>
                   <div className="inline-flex items-center mx-2">
                     <FaEnvelope className="mr-1" /> humas@relawantik.or.id
                   </div>
-                  <div className="inline-flex items-center mx-2 border-l border-l-white px-4">Media Sosial :</div>
-                  <Link href="">
+      <div className="inline-flex items-center mx-2 border-l border-l-white px-4">Media Sosial :</div>
+      <Link href="">
                     <div className="inline-flex items-center mx-2 hover:text-yellow-400 hover:cursor-pointer"><FaFacebook /></div>
-                  </Link>
-                  <Link href="">
+      </Link>
+      <Link href="">
                     <div className="inline-flex items-center mx-2 hover:text-yellow-400 hover:cursor-pointer"><FaInstagram /></div>
-                  </Link>
-                  <Link href="">
+      </Link>
+      <Link href="">
                     <div className="inline-flex items-center mx-2 hover:text-yellow-400 hover:cursor-pointer"><FaTwitter /></div>
-                  </Link>
-                </div>
-              </div>
+      </Link>
+    </div>
+  </div>
 
               <div className="container-custom flex flex-wrap items-center justify-between mx-auto">
-                <div className="w-full md:w-[15%] flex md:justify-start justify-center">
+    <div className="w-full md:w-[15%] flex md:justify-start justify-center">
                   <div className="w-[50%] md:w-[100%] my-1 flex flex-col justify-center bg-white rounded-lg p-2">
                     <Image src={logoutama} className="rounded-lg" alt="Logo RTIK" />
                   </div>
-                </div>
+    </div>
 
                 <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-10 h-10 bg-white justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
-                  <span className="sr-only">Open main menu</span>
-                  <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+        <span className="sr-only">Open main menu</span>
+        <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
-                  </svg>
-                </button>
+        </svg>
+    </button>
 
-                <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+    <div className="hidden w-full md:block md:w-auto" id="navbar-default">
                   <ul className="flex flex-col p-6 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
-                    <Link href="/">
+                <Link href="/">
                       <li><div className="uppercase cursor-pointer block px-5 py-2 text-black font-regular hover:bg-blue-800 hover:text-white rounded-3xl duration-500 hover:scale-110">Beranda</div></li>
-                    </Link>
-                    <Link href="/profil">
+                </Link>
+                <Link href="/profil">
                       <li><div className="uppercase cursor-pointer block px-5 py-2 text-black font-regular hover:bg-blue-800 hover:text-white rounded-3xl duration-500 hover:scale-110">Profil</div></li>
-                    </Link>
-                    <Link href="/program">
+                </Link>
+                <Link href="/program">
                       <li><div className="uppercase cursor-pointer block px-5 py-2 text-black font-regular hover:bg-blue-800 hover:text-white rounded-3xl duration-500 hover:scale-110">Program</div></li>
-                    </Link>
-                    <Link href="/mitra">
+                </Link>
+                <Link href="/mitra">
                       <li><div className="uppercase cursor-pointer block px-5 py-2 text-black font-regular hover:bg-blue-800 hover:text-white rounded-3xl duration-500 hover:scale-110">Mitra</div></li>
-                    </Link>
-                    <Link href="/kontak">
+                </Link>
+                <Link href="/kontak">
                       <li><div className="uppercase cursor-pointer block px-5 py-2 text-black font-regular hover:bg-blue-800 hover:text-white rounded-3xl duration-500 hover:scale-110">Kontak</div></li>
-                    </Link>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-          </div>
-        </div>
+                </Link>
+            </ul>
+    </div>
+  </div>
+</nav>
       </div>
+    </div>
+</div>
 
       {/* Hero Section */}
-      <div className="w-full bg-blue-800 h-[150px]">
+    <div className="w-full bg-blue-800 h-[150px]">
         <div className="container-custom mx-auto flex flex-col items-center justify-center">
           <h1 className="text-xl md:text-4xl mt-[70px] text-white text-center"
             data-aos="fade-down">
             Profil Relawan TIK Indonesia
           </h1>
         </div>
-      </div>
-
+    </div>
+    
       {/* Enhanced Profile Section */}
       <div className="container-custom mx-auto py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-20">
@@ -160,150 +160,150 @@ export default function ProfilRtik() {
               </Link>
             </div>
           </motion.div>
-        </div>
+      </div>
 
 
 
         {/* Kepengurusan Pusat Section */}
-        <div className="bg-sky-50 p-3 rounded-3xl w-full mt-10">
-          <h1 className="text-4xl mb-3 mt-5 text-blue-800 text-center">Kepengurusan Pusat</h1>
-          <div className="w-full flex flex-row flex-wrap justify-around">
+      <div className="bg-sky-50 p-3 rounded-3xl w-full mt-10">
+            <h1 className="text-4xl mb-3 mt-5 text-blue-800 text-center">Kepengurusan Pusat</h1>
+            <div className="w-full flex flex-row flex-wrap justify-around">
             {/* Ketua Umum */}
-            <div className="w-full flex flex-col md:flex-row items-center justify-around py-5 mb-5 rounded-xl">
-              <div className="w-full md:w-[20%] py-7 border-b-4 bg-white odd:border-red-600 even:border-red-400 rounded-3xl">
-                <div className="w-[150px] h-[150px] mx-auto rounded-full relative">
+                <div className="w-full flex flex-col md:flex-row items-center justify-around py-5 mb-5 rounded-xl">
+                    <div className="w-full md:w-[20%] py-7 border-b-4 bg-white odd:border-red-600 even:border-red-400 rounded-3xl">
+                        <div className="w-[150px] h-[150px] mx-auto rounded-full relative">
                   <Image src={profil} layout="fill" objectFit="cover" className="rounded-full" alt="" />
+                        </div>
+                        <div className="p-2 text-center">
+                            <h1 className="text-sm font-bold">Hani Purnawanti</h1>
+                            <h1 className="text-sm text-slate-500">Ketua Umum</h1>
                 </div>
-                <div className="p-2 text-center">
-                  <h1 className="text-sm font-bold">Hani Purnawanti</h1>
-                  <h1 className="text-sm text-slate-500">Ketua Umum</h1>
-                </div>
-              </div>
-            </div>
-
+                        </div>
+                    </div>
+                    
             {/* Sekretaris Jenderal */}
-            <div className="w-full md:w-[19%] py-7 border-b-4 mb-5 bg-white odd:border-red-600 even:border-blue-800 rounded-3xl">
-              <div className="w-[150px] h-[150px] mx-auto rounded-full relative">
+                <div className="w-full md:w-[19%] py-7 border-b-4 mb-5 bg-white odd:border-red-600 even:border-blue-800 rounded-3xl">
+                        <div className="w-[150px] h-[150px] mx-auto rounded-full relative">
                 <Image src={profil} layout="fill" objectFit="cover" className="rounded-full" alt="" />
-              </div>
-              <div className="p-2 text-center">
-                <h1 className="text-sm font-bold">Muh NurFajar Muharom</h1>
-                <h1 className="text-sm text-slate-500">Sekretaris Jenderal</h1>
-              </div>
-            </div>
+                        </div>
+                        <div className="p-2 text-center">
+                            <h1 className="text-sm font-bold">Muh NurFajar Muharom</h1>
+                            <h1 className="text-sm text-slate-500">Sekretaris Jenderal</h1>
+                        </div>
+                    </div>
 
             {/* Staf Sekretaris Jenderal 1 */}
-            <div className="w-full md:w-[19%] py-7 border-b-4 mb-5 bg-white odd:border-red-600 even:border-blue-800 rounded-3xl">
-              <div className="w-[150px] h-[150px] mx-auto rounded-full relative">
+                    <div className="w-full md:w-[19%] py-7 border-b-4 mb-5 bg-white odd:border-red-600 even:border-blue-800 rounded-3xl">
+                        <div className="w-[150px] h-[150px] mx-auto rounded-full relative">
                 <Image src={profil} layout="fill" objectFit="cover" className="rounded-full" alt="" />
-              </div>
-              <div className="p-2 text-center">
-                <h1 className="text-sm font-bold">Nurrul Baety Tsani</h1>
-                <h1 className="text-sm text-slate-500">Staf Sekretaris Jenderal</h1>
-              </div>
-            </div>
+                        </div>
+                        <div className="p-2 text-center">
+                            <h1 className="text-sm font-bold">Nurrul Baety Tsani</h1>
+                            <h1 className="text-sm text-slate-500">Staf Sekretaris Jenderal</h1>
+                        </div>
+                    </div>
 
             {/* Staf Sekretaris Jenderal 2 */}
-            <div className="w-full md:w-[19%] py-7 border-b-4 mb-5 bg-white odd:border-red-600 even:border-blue-800 rounded-3xl">
-              <div className="w-[150px] h-[150px] mx-auto rounded-full relative">
+                    <div className="w-full md:w-[19%] py-7 border-b-4 mb-5 bg-white odd:border-red-600 even:border-blue-800 rounded-3xl">
+                        <div className="w-[150px] h-[150px] mx-auto rounded-full relative">
                 <Image src={profil} layout="fill" objectFit="cover" className="rounded-full" alt="" />
-              </div>
-              <div className="p-2 text-center">
-                <h1 className="text-sm font-bold">Erlina Dwi Nahzdifah</h1>
-                <h1 className="text-sm text-slate-500">Staf Sekretaris Jenderal</h1>
-              </div>
-            </div>
+                        </div>
+                        <div className="p-2 text-center">
+                            <h1 className="text-sm font-bold">Erlina Dwi Nahzdifah</h1>
+                            <h1 className="text-sm text-slate-500">Staf Sekretaris Jenderal</h1>
+                        </div>
+                    </div>
 
             {/* Staf Sekretaris Jenderal 3 */}
-            <div className="w-full md:w-[19%] py-7 border-b-4 mb-5 bg-white odd:border-red-600 even:border-blue-800 rounded-3xl">
-              <div className="w-[150px] h-[150px] mx-auto rounded-full relative">
+                    <div className="w-full md:w-[19%] py-7 border-b-4 mb-5 bg-white odd:border-red-600 even:border-blue-800 rounded-3xl">
+                        <div className="w-[150px] h-[150px] mx-auto rounded-full relative">
                 <Image src={profil} layout="fill" objectFit="cover" className="rounded-full" alt="" />
-              </div>
-              <div className="p-2 text-center">
-                <h1 className="text-sm font-bold">Enny Tridha Rahmina</h1>
-                <h1 className="text-sm text-slate-500">Staf Sekretaris Jenderal</h1>
-              </div>
-            </div>
+                        </div>
+                        <div className="p-2 text-center">
+                            <h1 className="text-sm font-bold">Enny Tridha Rahmina</h1>
+                            <h1 className="text-sm text-slate-500">Staf Sekretaris Jenderal</h1>
+                        </div>
+                    </div>
 
             {/* Bendahara Umum */}
-            <div className="w-full md:w-[19%] py-7 border-b-4 mb-5 bg-white odd:border-red-600 even:border-blue-800 rounded-3xl">
-              <div className="w-[150px] h-[150px] mx-auto rounded-full relative">
+                    <div className="w-full md:w-[19%] py-7 border-b-4 mb-5 bg-white odd:border-red-600 even:border-blue-800 rounded-3xl">
+                        <div className="w-[150px] h-[150px] mx-auto rounded-full relative">
                 <Image src={profil} layout="fill" objectFit="cover" className="rounded-full" alt="" />
-              </div>
-              <div className="p-2 text-center">
-                <h1 className="text-sm font-bold">Desty Yani</h1>
-                <h1 className="text-sm text-slate-500">Bendahara Umum</h1>
-              </div>
-            </div>
+                        </div>
+                        <div className="p-2 text-center">
+                            <h1 className="text-sm font-bold">Desty Yani</h1>
+                            <h1 className="text-sm text-slate-500">Bendahara Umum</h1>
+                        </div>
+                    </div>
 
             {/* Bidang Pembinaan Organisasi dan Kaderisasi 1 */}
-            <div className="w-full md:w-[19%] py-7 border-b-4 mb-5 bg-white odd:border-red-600 even:border-blue-800 rounded-3xl">
-              <div className="w-[150px] h-[150px] mx-auto rounded-full relative">
+                    <div className="w-full md:w-[19%] py-7 border-b-4 mb-5 bg-white odd:border-red-600 even:border-blue-800 rounded-3xl">
+                        <div className="w-[150px] h-[150px] mx-auto rounded-full relative">
                 <Image src={profil} layout="fill" objectFit="cover" className="rounded-full" alt="" />
-              </div>
-              <div className="p-2 text-center">
-                <h1 className="text-sm font-bold">Samuel Toding</h1>
-                <h1 className="text-sm text-slate-500">Bidang Pembinaan Organisasi dan Kaderisasi</h1>
-              </div>
-            </div>
+                        </div>
+                        <div className="p-2 text-center">
+                            <h1 className="text-sm font-bold">Samuel Toding</h1>
+                            <h1 className="text-sm text-slate-500">Bidang Pembinaan Organisasi dan Kaderisasi</h1>
+                        </div>
+                    </div>
 
             {/* Bidang Pembinaan Organisasi dan Kaderisasi 2 */}
-            <div className="w-full md:w-[19%] py-7 border-b-4 mb-5 bg-white odd:border-red-600 even:border-blue-800 rounded-3xl">
-              <div className="w-[150px] h-[150px] mx-auto rounded-full relative">
+                    <div className="w-full md:w-[19%] py-7 border-b-4 mb-5 bg-white odd:border-red-600 even:border-blue-800 rounded-3xl">
+                        <div className="w-[150px] h-[150px] mx-auto rounded-full relative">
                 <Image src={profil} layout="fill" objectFit="cover" className="rounded-full" alt="" />
-              </div>
-              <div className="p-2 text-center">
-                <h1 className="text-sm font-bold">Ramlan</h1>
-                <h1 className="text-sm text-slate-500">Bidang Pembinaan Organisasi dan Kaderisasi</h1>
-              </div>
-            </div>
+                        </div>
+                        <div className="p-2 text-center">
+                            <h1 className="text-sm font-bold">Ramlan</h1>
+                            <h1 className="text-sm text-slate-500">Bidang Pembinaan Organisasi dan Kaderisasi</h1>
+                        </div>
+                    </div>
 
             {/* Bidang Kemitraan 1 */}
-            <div className="w-full md:w-[19%] py-7 border-b-4 mb-5 bg-white odd:border-red-600 even:border-blue-800 rounded-3xl">
-              <div className="w-[150px] h-[150px] mx-auto rounded-full relative">
+                    <div className="w-full md:w-[19%] py-7 border-b-4 mb-5 bg-white odd:border-red-600 even:border-blue-800 rounded-3xl">
+                        <div className="w-[150px] h-[150px] mx-auto rounded-full relative">
                 <Image src={profil} layout="fill" objectFit="cover" className="rounded-full" alt="" />
-              </div>
-              <div className="p-2 text-center">
-                <h1 className="text-sm font-bold">I Putu Gede Krisna Juliharta</h1>
-                <h1 className="text-sm text-slate-500">Bidang Kemitraan</h1>
-              </div>
-            </div>
+                        </div>
+                        <div className="p-2 text-center">
+                            <h1 className="text-sm font-bold">I Putu Gede Krisna Juliharta</h1>
+                            <h1 className="text-sm text-slate-500">Bidang Kemitraan</h1>
+                        </div>
+                    </div>
 
             {/* Bidang Kemitraan 2 */}
-            <div className="w-full md:w-[19%] py-7 border-b-4 mb-5 bg-white odd:border-red-600 even:border-blue-800 rounded-3xl">
-              <div className="w-[150px] h-[150px] mx-auto rounded-full relative">
+                    <div className="w-full md:w-[19%] py-7 border-b-4 mb-5 bg-white odd:border-red-600 even:border-blue-800 rounded-3xl">
+                        <div className="w-[150px] h-[150px] mx-auto rounded-full relative">
                 <Image src={profil} layout="fill" objectFit="cover" className="rounded-full" alt="" />
-              </div>
-              <div className="p-2 text-center">
-                <h1 className="text-sm font-bold">Feriyanto</h1>
-                <h1 className="text-sm text-slate-500">Bidang Kemitraan</h1>
-              </div>
-            </div>
+                        </div>
+                        <div className="p-2 text-center">
+                            <h1 className="text-sm font-bold">Feriyanto</h1>
+                            <h1 className="text-sm text-slate-500">Bidang Kemitraan</h1>
+                        </div>
+                    </div>
 
             {/* Bidang Kemitraan 3 */}
-            <div className="w-full md:w-[19%] py-7 border-b-4 mb-5 bg-white odd:border-red-600 even:border-blue-800 rounded-3xl">
-              <div className="w-[150px] h-[150px] mx-auto rounded-full relative">
+                    <div className="w-full md:w-[19%] py-7 border-b-4 mb-5 bg-white odd:border-red-600 even:border-blue-800 rounded-3xl">
+                        <div className="w-[150px] h-[150px] mx-auto rounded-full relative">
                 <Image src={profil} layout="fill" objectFit="cover" className="rounded-full" alt="" />
-              </div>
-              <div className="p-2 text-center">
-                <h1 className="text-sm font-bold">Meylani Pratiwi</h1>
-                <h1 className="text-sm text-slate-500">Bidang Kemitraan</h1>
-              </div>
-            </div>
+                        </div>
+                        <div className="p-2 text-center">
+                            <h1 className="text-sm font-bold">Meylani Pratiwi</h1>
+                            <h1 className="text-sm text-slate-500">Bidang Kemitraan</h1>
+                        </div>
+                    </div>
 
             {/* Bidang Program */}
-            <div className="w-full md:w-[19%] py-7 border-b-4 mb-5 bg-white odd:border-red-600 even:border-blue-800 rounded-3xl">
-              <div className="w-[150px] h-[150px] mx-auto rounded-full relative">
+                    <div className="w-full md:w-[19%] py-7 border-b-4 mb-5 bg-white odd:border-red-600 even:border-blue-800 rounded-3xl">
+                        <div className="w-[150px] h-[150px] mx-auto rounded-full relative">
                 <Image src={profil} layout="fill" objectFit="cover" className="rounded-full" alt="" />
-              </div>
-              <div className="p-2 text-center">
-                <h1 className="text-sm font-bold">Hamzah Fathoni</h1>
-                <h1 className="text-sm text-slate-500">Bidang Program</h1>
+                        </div>
+                        <div className="p-2 text-center">
+                            <h1 className="text-sm font-bold">Hamzah Fathoni</h1>
+                            <h1 className="text-sm text-slate-500">Bidang Program</h1>
               </div>
             </div>
-          </div>
-        </div>
-
+                        </div>
+                    </div>
+                
         {/* Tujuan Section */}
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden mb-20">
           <div className="bg-gradient-to-r from-blue-800 to-blue-600 p-8">
@@ -480,8 +480,8 @@ export default function ProfilRtik() {
                 </div>
               </div>
             </div>
-          </div>
-
+      </div>
+      
           {/* Deklarasi Card */}
           <div className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
             <div className="bg-gradient-to-r from-blue-700 to-blue-500 p-6">
@@ -501,7 +501,7 @@ export default function ProfilRtik() {
                 <li className="leading-relaxed">Kami relawan TIK siap berkorban tanpa pamrih memberdayakan masyarakat melalui pemanfaatan TIK</li>
               </ol>
             </div>
-          </div>
+    </div>
 
           {/* Hymne Card */}
           <div className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
@@ -534,16 +534,16 @@ export default function ProfilRtik() {
       </div>
 
       {/* Footer */}
-      <div className="bg-slate-100" data-aos="fade-up">
-        <div className="container-custom mx-auto py-10 flex flex-col items-center justify-center">
-          <div>
+   <div className="bg-slate-100" data-aos="fade-up">
+      <div className="container-custom mx-auto py-10 flex flex-col items-center justify-center">
+        <div>
             <Image src={logoutama} className="rounded-xl" alt="Logo RTIK" width={200} height={50} />
-          </div>
-          <div>
-            <p className="text-black text-sm">Copyright 2025 Relawan TIK Indonesia</p>
-          </div>
+        </div>
+        <div>
+          <p className="text-black text-sm">Copyright 2025 Relawan TIK Indonesia</p>
         </div>
       </div>
+    </div>
     </>
   )
 }

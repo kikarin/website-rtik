@@ -91,31 +91,38 @@ export default function ProgramDetail() {
       </div>
 
       {/* Content Section */}
-      <div className="container-custom mx-auto py-16">
+      <div className="container-custom mx-auto py-16 mb-32">
         <div className="bg-white rounded-xl shadow-lg p-8">
           {/* Program Image */}
-          <div className="mb-8">
+          <div className="mb-8 flex justify-center">
             <Image
-              src="/emonev.png" // Ganti dengan path gambar yang sesuai
+              src="/4-2.png"
               alt="Program Image"
-              width={700}
-              height={380}
-              className="rounded-lg"
+              width={1200}
+              height={800}
+              className="rounded-lg object-contain w-full h-auto"
               priority
             />
           </div>
           
-          {/* Detail content goes here */}
+          {/* Detail content */}
           <h2 className="text-3xl font-bold mb-6">Program Title</h2>
           <div className="prose max-w-none">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            {/* Add more content as needed */}
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
           </div>
         </div>
       </div>
 
+
       {/* Footer */}
-      {/* ... footer content ... */}
+      <footer className="bg-gray-100" data-aos="fade-up">
+      <div className="container-custom mx-auto py-10 flex flex-col items-center justify-center">
+          <div className="mb-4">
+            <Image src={logoutama} alt="Logo RTIK" width={200} height={50} />
+        </div>
+          <p className="text-gray-600 text-sm">Copyright © 2024 Relawan TIK Indonesia</p>
+        </div>
+      </footer>
     </>
   )
-} 
+}
