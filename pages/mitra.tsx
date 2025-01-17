@@ -633,32 +633,32 @@ export default function MitraRtik() {
                     Berkolaborasi dengan berbagai instansi dan organisasi untuk memberikan dampak positif bagi masyarakat
                 </p>
                 
-               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                             {filteredMitra.map((mitra) => (
                                 <div 
                                     key={mitra.id}
                                     className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group"
                                 >
-        <div className="relative h-48 overflow-hidden">
-            <Image 
+                        <div className="relative h-48 overflow-hidden">
+                            <Image 
                                             src={mitra.image}
                                             alt={mitra.name}
-                width={400}
-                height={300}
-                className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-300"
-            />
-        </div>
-        <div className="p-4">
+                                width={400}
+                                height={300}
+                                className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-300"
+                            />
+                        </div>
+                        <div className="p-4">
                                         <h3 className="font-medium text-gray-800">{mitra.name}</h3>
-        </div>
-    </div>
+                        </div>
+                    </div>
                             ))}
-    </div>
+                    </div>
 
-</div>
+                    </div>
 
 
-</div>
+                    </div>
 
 
                 </div>

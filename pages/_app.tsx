@@ -38,6 +38,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>RTIK Indonesia</title>
         <link rel="shortcut icon" type="image/png" href="/Logo-RTIK-Indonesia-Web-Berita-2023-1.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <Component {...pageProps} />
     </>
